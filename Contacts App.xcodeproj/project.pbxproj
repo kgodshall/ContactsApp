@@ -14,6 +14,9 @@
 		0FF928CD1BED185C00D70C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF928CB1BED185C00D70C3F /* LaunchScreen.storyboard */; };
 		0FF928D81BED185C00D70C3F /* Contacts_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF928D71BED185C00D70C3F /* Contacts_AppTests.swift */; };
 		0FF928E31BED185D00D70C3F /* Contacts_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF928E21BED185D00D70C3F /* Contacts_AppUITests.swift */; };
+		0FF928F11BED18E600D70C3F /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF928F01BED18E600D70C3F /* ContactsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0FF928F31BF15C4A00D70C3F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF928F21BF15C4A00D70C3F /* Contact.swift */; settings = {ASSET_TAGS = (); }; };
+		0FF928F51BF1604300D70C3F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF928F41BF1604300D70C3F /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0FF928DE1BED185D00D70C3F /* Contacts AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contacts AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF928E21BED185D00D70C3F /* Contacts_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_AppUITests.swift; sourceTree = "<group>"; };
 		0FF928E41BED185D00D70C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF928F01BED18E600D70C3F /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		0FF928F21BF15C4A00D70C3F /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		0FF928F41BF1604300D70C3F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				0FF928C21BED185C00D70C3F /* AppDelegate.swift */,
 				0FF928C41BED185C00D70C3F /* ViewController.swift */,
 				0FF928C61BED185C00D70C3F /* Main.storyboard */,
+				0FF928F41BF1604300D70C3F /* DetailViewController.swift */,
+				0FF928F21BF15C4A00D70C3F /* Contact.swift */,
+				0FF928F01BED18E600D70C3F /* ContactsTableViewController.swift */,
 				0FF928C91BED185C00D70C3F /* Assets.xcassets */,
 				0FF928CB1BED185C00D70C3F /* LaunchScreen.storyboard */,
 				0FF928CE1BED185C00D70C3F /* Info.plist */,
@@ -255,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF928F31BF15C4A00D70C3F /* Contact.swift in Sources */,
 				0FF928C51BED185C00D70C3F /* ViewController.swift in Sources */,
+				0FF928F51BF1604300D70C3F /* DetailViewController.swift in Sources */,
 				0FF928C31BED185C00D70C3F /* AppDelegate.swift in Sources */,
+				0FF928F11BED18E600D70C3F /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +493,7 @@
 				0FF928E91BED185D00D70C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FF928EA1BED185D00D70C3F /* Build configuration list for PBXNativeTarget "Contacts AppTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +502,7 @@
 				0FF928EC1BED185D00D70C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FF928ED1BED185D00D70C3F /* Build configuration list for PBXNativeTarget "Contacts AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +511,7 @@
 				0FF928EF1BED185D00D70C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
