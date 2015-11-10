@@ -39,7 +39,12 @@
                             <outlet property="delegate" destination="srG-9F-L05" id="Sj5-VM-72F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Wv5-6l-D87"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Wv5-6l-D87">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="3gu-Q0-0wF"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ml7-rR-Bib" userLabel="First Responder" sceneMemberID="firstResponder"/>
