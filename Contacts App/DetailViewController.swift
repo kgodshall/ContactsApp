@@ -18,8 +18,15 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let contact = self.contact {
+            if let name = contact.name {
+                self.nameLabel.text = name
+            }
+            if let phoneNumber = contact.phoneNumber {
+                self.phoneNumberLabel.text = phoneNumber
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

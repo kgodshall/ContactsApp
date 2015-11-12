@@ -14,7 +14,6 @@ class ContactsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let jenny = Contact(phoneNumber: "867-5309")
         let rich = Contact(name: "Rich", phoneNumber: "888-888-8888")
         let mindy = Contact(name: "Mindy")
@@ -25,17 +24,10 @@ class ContactsTableViewController: UITableViewController {
         self.contacts.append(mindy)
         self.contacts.append(kira)
         
-        if let contact = self.contact {
-            if let name = contact.name {
-                self.nameLabel.text = name
-            }
-            if let phoneNumber = contact.phoneNumber {
-                self.phoneNumberLabel.text = phoneNumber
-            }
-        }
         let moveButton = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: Selector("toggleEdit"))
         navigationItem.leftBarButtonItem = moveButton
     }
+    
     
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
